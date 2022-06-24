@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sfas"
+requires = ["random"]
+version = "0.0.2"
+authors = [
+  { name="Arie Matsliah", email="arie.matsliah@gmail.com" },
+]
+description = "Efficient implementation of a greedy algorithm for computing small feedback arc sets in directed weighted multi-graphs."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ariematsliah-princeton/sfas"
+"Bug Tracker" = "https://github.com/ariematsliah-princeton/sfas/issues"
