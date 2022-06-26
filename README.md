@@ -34,3 +34,6 @@ greedy.compute_order(graph, verbosity=0, random_seed=0)
 ```
 ['c', 'a', 'b']
 ```
+
+## Questions / suggestions welcome
+`arie.matsliah@gmail.com`
