@@ -4,9 +4,7 @@ This implementation is an adaptation of the algorithm described in Section 2.3 o
 
 ## Description
 Given a weighted directed graph, calculates linear arrangement of the nodes that minimizes (greedily) the number of backward edges (feedback arc set).
-Removing the set of edges going backward in the resulting order breaks all directed cycles in the graph.
-
-Implements Algorithm 1 from http://www.vldb.org/pvldb/vol10/p133-simpson.pdf
+In particular, removing the set of edges going backward in the resulting order breaks all directed cycles in the graph.
 
 ## Interface
 ### Input:
