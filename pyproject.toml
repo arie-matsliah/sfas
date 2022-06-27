@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "sfas"
 requires = ["random"]
-version = "0.0.6"
+version = "0.0.7"
 authors = [
   { name="Arie Matsliah", email="arie.matsliah@gmail.com" },
 ]
