@@ -4,18 +4,10 @@ This implementation is an adaptation of the algorithm described in Section 2.3 o
 ## Description
 Given a weighted directed graph, computes a topological sorting (linear order of the nodes) that minimizes (greedily) the number of backward edges - feedback arc set.
 In particular, removing the set of edges going backward in the resulting order breaks all directed cycles in the graph.
-## Interface
-### Params:
-1. `connections : List[List[Any, Any, Int]]` - list of edges, each represented as a 3-item list consisting of `[<from node>, <to node>, <edge weight>]`
-1. `verbosity : Int` - prints progress and other stats for values > 0
-1. `random_seed : Int` randomness is in picking the next "greedy" step among equally qualified ones
-### Result:
-1. `List` with all nodes, ordered so that the total weight of edges going backwards (w.r.t. this order) is small
 ## Install
 `pip install sfas`
 ## Example usage
 ```
-from sfas import greedy
 graph = [
     ['a', 'b', 1],
     ['a', 'c', 1],
@@ -25,12 +17,20 @@ graph = [
 ```
 ![Input Graph](https://github.com/ariematsliah-princeton/sfas/raw/main/static/ex_graph_orig.png)
 ```
-greedy.compute_order(graph, verbosity=0, random_seed=0)
+from sfas import greedy
+ouput = greedy.compute_order(graph)
 ```
 #### output
 ```
 ['c', 'd', 'a', 'b']
 ```
 ![Order with minimal FAS](https://github.com/ariematsliah-princeton/sfas/raw/main/static/ex_graph_sfas.png)
+## Interface
+### Params:
+1. `connections : List[List[Any, Any, Int]]` - list of edges, each represented as a 3-item list consisting of `[<from node>, <to node>, <edge weight>]`
+1. `verbosity : Int` - prints progress and other stats for values > 0
+1. `random_seed : Int` randomness is in picking the next "greedy" step among equally qualified ones
+### Result:
+1. `List` with all nodes, ordered so that the total weight of edges going backwards (w.r.t. this order) is small
 ## Questions / suggestions welcome
 `arie.matsliah@gmail.com`
