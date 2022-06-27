@@ -23,7 +23,7 @@ graph = [
     ['d', 'a', 2],
 ]
 ```
-![Input Graph](static/ex_graph_orig.png)
+![Input Graph](https://github.com/ariematsliah-princeton/sfas/raw/main/static/ex_graph_orig.png)
 ```
 greedy.compute_order(graph, verbosity=0, random_seed=0)
 ```
@@ -31,6 +31,6 @@ greedy.compute_order(graph, verbosity=0, random_seed=0)
 ```
 ['c', 'd', 'a', 'b']
 ```
-![Order with minimal FAS](static/ex_graph_sfas.png)
+![Order with minimal FAS](https://github.com/ariematsliah-princeton/sfas/raw/main/static/ex_graph_sfas.png)
 ## Questions / suggestions welcome
 `arie.matsliah@gmail.com`
