@@ -18,14 +18,19 @@ In particular, removing the set of edges going backward in the resulting order b
 from sfas import greedy
 graph = [
     ['a', 'b', 1],
-    ['b', 'c', 1],
-    ['c', 'a', 2],
+    ['a', 'c', 1],
+    ['c', 'd', 2],
+    ['d', 'a', 2],
 ]
+```
+![Input Graph](static/ex_graph_orig.png)
+```
 greedy.compute_order(graph, verbosity=0, random_seed=0)
 ```
 #### output
 ```
-['c', 'a', 'b']
+['c', 'd', 'a', 'b']
 ```
+![Order with minimal FAS](static/ex_graph_sfas.png)
 ## Questions / suggestions welcome
 `arie.matsliah@gmail.com`
