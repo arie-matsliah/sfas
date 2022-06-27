@@ -5,11 +5,12 @@ build-backend = "hatchling.build"
 [project]
 name = "sfas"
 requires = ["random"]
-version = "0.0.2"
+version = "0.0.6"
 authors = [
   { name="Arie Matsliah", email="arie.matsliah@gmail.com" },
 ]
-description = "Efficient implementation of a greedy algorithm for computing small feedback arc sets in directed weighted multi-graphs."
+description-file="README.md"
+long-description-file="README.md"
 readme = "README.md"
 requires-python = ">=3.6"
 classifiers = [
